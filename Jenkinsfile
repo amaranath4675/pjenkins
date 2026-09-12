@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment { 
-        STATUS = 'success'
+        STATUS = "Success"
     }
     stages {
         stage('Build') {
@@ -26,7 +26,7 @@ pipeline {
     }
     post { 
         success { 
-            echo 'I will run if $SUCCESS '
+            echo 'I will run if $STATUS'
         }
         failure { 
             echo 'I will run if failure'
