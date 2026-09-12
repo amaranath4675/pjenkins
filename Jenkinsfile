@@ -4,9 +4,6 @@ pipeline {
            label 'AGENT-1'
         }
     }
-    env {
-
-    }
     stages {
         stage('Build') {
             steps {
