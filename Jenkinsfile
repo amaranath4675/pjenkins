@@ -26,8 +26,7 @@ pipeline {
     }
     post { 
         success { 
-            echo 'I will run if "$STATUS"'
-            echo " $STATUS "
+            echo " I will run if $STATUS "
         }
         failure { 
             echo 'I will run if failure'
